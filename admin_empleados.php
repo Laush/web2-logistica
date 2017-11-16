@@ -47,6 +47,10 @@ session_start();
 			  padding: 100px 25px;
 			  font-family: Montserrat, sans-serif;
 		  }
+
+		  .btn,.table{
+			color:black;
+		}
 	</style>
 
 	<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">

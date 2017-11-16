@@ -96,6 +96,9 @@
 		.input-group .form-control {
     		margin: 0px !important;
 		}
+		.btn,.table{
+			color:black;
+		}
 
 		
 	</style>

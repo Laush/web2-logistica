@@ -27,20 +27,11 @@ session_start();
 		
 		$result=mysqli_query($link,$sql);	
 
-      // linea como se hizo en el registro,  guarda si el id no exuste
-		//if(!$resul=mysqli_query($link,"INSERT INTO viaje (id_viaje,origen,destino,fecha_salida,fecha_llegada,tipo_carga,km_recorrido_previsto,km_recorrido_real,combustible_previsto,combustible_real,tiempo_estimado,tiempo_real,id_cliente,usuario)values($id_viaje,'$origen','$destino','$fecha_salida','$fecha_llegada','$tipo_carga',$km_previsto,$km_real,$combustible_previsto,$combustible_real,'$tiempo_estimado','$tiempo_real',$id_cliente,'$usuario')"))
 								
 	
 						
     }
 ?>
-
-
-
-
-
-
-
 
 
 
@@ -87,6 +78,10 @@ session_start();
 		.input-group .form-control {
     		margin: 0px !important;
 		}
+
+		.btn,.table{
+			color:black;
+		}
 	</style>
 
 	<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -120,52 +115,9 @@ session_start();
 <div class="jumbotron text-center">
 <h3>· Complete el siguiente formulario para crear un nuevo VEHICULO ·</h3>			
  <div class="container">
-<form class="form-signin" method="POST" action="admin_flota.php"  >
-   	
-    <div class="input-group">
-			<span class="input-group-addon" id="basic-addon1">Id Vehiculo</span>
-			<input type="text" name="id_vehiculo"  id="inputvehiculo" class="form-control" placeholder="Ingrese ID Vechiculo" aria-describedby="basic-addon1" >
-	</div>
-
-
-	 <div class="input-group">
-			<span class="input-group-addon" id="basic-addon1">Patente</span>
-			<input type="text" name="patente"  id="inputPatente" class="form-control" placeholder="Ingrese patente" aria-describedby="basic-addon1" >
-	</div>
-
-		    <div class="input-group">
-			<span class="input-group-addon" id="basic-addon1">Marca</span>
-			<input type="text" name="marca"  id="inputMarca" class="form-control" placeholder="Ingrese marca" aria-describedby="basic-addon1" >
-	</div>
-
-
-	<div class="input-group">
-			<span class="input-group-addon" id="basic-addon1">Modelo</span>
-			<input type="text" name="modelo"  id="inputModelo" class="form-control" placeholder="Ingrese modelo" aria-describedby="basic-addon1" >
-	</div>
-
-	 <div class="input-group">
-			<span class="input-group-addon" id="basic-addon1">Nº Chasis</span>
-			<input type="text" name="nro_chasis"  id="inputChasis" class="form-control" placeholder="Ingrese Nro Chasis" aria-describedby="basic-addon1" >
-	 </div>
-
-
-	 <div class="input-group">
-			<span class="input-group-addon" id="basic-addon1">NºMotor</span>
-			<input type="text" name="nro_motor"  id="inputMotor" class="form-control" placeholder="Ingrese Nro Motor" aria-describedby="basic-addon1" >
-	 </div>
-
-	  <div class="input-group">
-			<span class="input-group-addon" id="basic-addon1">Usuario</span>
-			<input type="text" name="usuario"  id="inputUsiario" class="form-control" placeholder="Ingrese usuario" aria-describedby="basic-addon1" >
-      </div>
- 
-   <br>
-	<button type="submit" class="btn" id="btnCrearVehiculo" name="btnCrearVehiculo">Crear Vechiculo</button><br>
-
-  </form> 
+<a href="admin_registrar_flota.php"><button class="btn" type="button">Crear Vehiculo</button></a> 
  </div>
-  
+  <br>
 	<table class="table table-hover">
     <thead>
       <tr>
@@ -184,10 +136,7 @@ include_once("sql_abm_flota.php");
 $link= Conectarse();
 $result=mysqli_query($link,"SELECT * FROM vehiculo GROUP BY id_vehiculo");
 $output=array();
-/*
-$query="SELECT * FROM vehiculo GROUP BY id_vehiculo"; //consulta tabla vehiculo
-$result=mysqli_query($conexion,$query);
-*/
+
 while($fila=mysqli_fetch_array($result)){ 
 	echo"<tr>";
 		echo"<td>".$fila["id_vehiculo"]."</td>";

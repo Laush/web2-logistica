@@ -72,6 +72,10 @@ session_start();
         .input-group .form-control {
             margin: 0px !important;
         }
+
+        		.btn,.table{
+			color:black;
+		}
 	</style>
 
 	<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -105,49 +109,7 @@ session_start();
    <!-- FORMULARIO MANTENIMIENTO--> 
    <div class="container">
    
-    <form class="form-signin" method="POST" action="mecanico_mantenimiento.php"  >
-     
-    <div class="input-group">
-            <span class="input-group-addon" id="basic-addon1">Id</span>
-            <input type="text" name="id_mantenimiento"  id="inputMant" class="form-control" placeholder="Ingrese ID Mantenimiento" aria-describedby="basic-addon1" >
-    </div>
- 
- 
-     <div class="input-group">
-            <span class="input-group-addon" id="basic-addon1">Fecha</span>
-            <input type="text" name="fecha_service"  id="inputFecha" class="form-control" placeholder="Ingrese fecha de service" aria-describedby="basic-addon1" >
-    </div>
- 
-            <div class="input-group">
-            <span class="input-group-addon" id="basic-addon1">Km unidad</span>
-            <input type="text" name="km_unidad"  id="inputKm" class="form-control" placeholder="Ingrese Km de la unidad" aria-describedby="basic-addon1" >
-    </div>
- 
- 
-    <div class="input-group">
-            <span class="input-group-addon" id="basic-addon1">Costo</span>
-            <input type="text" name="costo"  id="inputCosto" class="form-control" placeholder="Ingrese costo" aria-describedby="basic-addon1" >
-    </div>
- 
-     <div class="input-group">
-            <span class="input-group-addon" id="basic-addon1">Repuestos</span>
-            <input type="text" name="repuestos"  id="inputRepuestos" class="form-control" placeholder="Ingrese Repuestos" aria-describedby="basic-addon1" >
-     </div>
- 
- 
-     <div class="input-group">
-            <span class="input-group-addon" id="basic-addon1">Usuario</span>
-            <input type="text" name="usuario"  id="inputUsuario" class="form-control" placeholder="Ingrese usuario" aria-describedby="basic-addon1" >
-     </div>
- 
-      <div class="input-group">
-            <span class="input-group-addon" id="basic-addon1">Id vehiculo</span>
-            <input type="text" name="id_vehiculo"  id="inputVehiculo" class="form-control" placeholder="Ingrese Id vehiculo" aria-describedby="basic-addon1" >
-      </div>
- <br><br>
-<button type="submit" class="btn" id="btnCrearMantenimiento" name="btnCrearMatenimiento">Crear Mantenimiento</button><br>
-             
-  </form> 
+    <a href="mecanico_registrar_mantenimiento.php"><button class="btn" type="button">Crear Mantenimiento</button></a> 
 
 </div>
 	

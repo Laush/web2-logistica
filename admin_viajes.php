@@ -90,6 +90,11 @@ session_start();
 		.input-group .form-control {
     		margin: 0px !important;
 		}
+
+		.btn,.table{
+			color:black;
+		}
+		
 	</style>
 
 	<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -122,104 +127,9 @@ session_start();
 
 	<div class="jumbotron text-center">
 <h3>· Complete el siguiente formulario para crear un nuevo VIAJE ·</h3>
-   <br><!-- FORMULARIO INICIO DE VIAJE--> 
+
    <div class="container">
-  
-  	<form class="form-horizontal" method="POST" action="admin_viajes.php"  >
- <!-- COLUMNA IZQUIERDA -->    	
-<div class="col-sm-6"> 
-
-    <div class="input-group">
-			<span class="input-group-addon" id="basic-addon1">Id Viaje</span>
-			<input type="text" name="id_viaje"  id="inputId" class="form-control" placeholder="Ingrese ID" aria-describedby="basic-addon1" >
-	</div>
-
-
-	 <div class="input-group">
-			<span class="input-group-addon" id="basic-addon1">Origen</span>
-			<input type="text" name="origen"  id="inputOrigen" class="form-control" placeholder="Ingrese origen" aria-describedby="basic-addon1" >
-	</div>
-
-		    <div class="input-group">
-			<span class="input-group-addon" id="basic-addon1">Destino</span>
-			<input type="text" name="destino"  id="inputDestino" class="form-control" placeholder="Ingrese destino" aria-describedby="basic-addon1" >
-	</div>
-
-
-	<div class="input-group">
-			<span class="input-group-addon" id="basic-addon1">Salida</span>
-			<input type="text" name="fecha_salida"  id="inputSalida" class="form-control" placeholder="Ingrese fecha de salida" aria-describedby="basic-addon1" >
-	</div>
-
-	 <div class="input-group">
-			<span class="input-group-addon" id="basic-addon1">Llegada</span>
-			<input type="text" name="fecha_llegada"  id="inputLlegada" class="form-control" placeholder="Ingrese fecha de llegada" aria-describedby="basic-addon1" >
-	 </div>
-
-
-	 <div class="input-group">
-			<span class="input-group-addon" id="basic-addon1">Carga</span>
-			<input type="text" name="carga"  id="inputCarga" class="form-control" placeholder="Ingrese tipo de carga" aria-describedby="basic-addon1" >
-	 </div>
-
-	  <div class="input-group">
-			<span class="input-group-addon" id="basic-addon1">Cliente</span>
-			<input type="text" name="cliente"  id="inputCliente" class="form-control" placeholder="Ingrese cliente" aria-describedby="basic-addon1" >
-      </div>
-
- 
-    
-</div>
-
- <!-- COLUMNA DERECHA -->  
-<div class="col-sm-6">
-
-      <div class="input-group">
-			<span class="input-group-addon" id="basic-addon1">Usuario</span>
-			<input type="text" name="usuario"  id="inputUsuario" class="form-control" placeholder="Ingrese usuario" aria-describedby="basic-addon1" >
-      </div>
-
-       <div class="input-group">
-			<span class="input-group-addon" id="basic-addon1">Km</span>
-			<input type="text" name="km_previsto"  id="inputKmpre" class="form-control" placeholder="Ingrese km previsto" aria-describedby="basic-addon1" >
-      </div>
-
-            <div class="input-group">
-			<span class="input-group-addon" id="basic-addon1">Km</span>
-			<input type="text" name="km_real"  id="inputKmprea" class="form-control" placeholder="Ingrese km real" aria-describedby="basic-addon1" >
-      </div>
-      
-          
-<!-- COMBUSTIBLE PREVISTO Y REAL -->  
-
-           <div class="input-group">
-			<span class="input-group-addon" id="basic-addon1">Litros</span>
-			<input type="text" name="comb_previsto"  id="inputCombpre" class="form-control" placeholder="Ingrese combustible previsto" aria-describedby="basic-addon1" >
-      </div>
-
-           <div class="input-group">
-			<span class="input-group-addon" id="basic-addon1">Litros</span>
-			<input type="text" name="comb_real"  id="inputCombrea" class="form-control" placeholder="Ingrese combustible real" aria-describedby="basic-addon1" >
-      </div>
-
-      <div class="input-group">
-			<span class="input-group-addon" id="basic-addon1">Tiempo </span>
-			<input type="text" name="tiempo_previsto"  id="inputTiempopre" class="form-control" placeholder="Ingrese tiempo previsto" aria-describedby="basic-addon1" >
-      </div>
-
-         <div class="input-group">
-			<span class="input-group-addon" id="basic-addon1">Tiempo </span>
-			<input type="text" name="tiempo_real"  id="inputTiemporea" class="form-control" placeholder="Ingrese tiempo real" aria-describedby="basic-addon1" >
-      </div>
-
-    <br>
-  </div>
-
-   <br>
-	<button type="submit" class="btn" id="btnCrearViaje" name="btnCrearViaje">Crear Viaje</button><br>
-
-
-  </form> 
+ 	<a href="admin_registrar_viaje.php"><button class="btn" type="button">Crear Viaje</button></a>
 
 
 </div>

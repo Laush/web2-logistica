@@ -39,6 +39,10 @@ exit();
 		overflow-y:hidden;
 		  }
 
+  .btn,.table{
+      color:black;
+    }
+
 
   </style>
 
